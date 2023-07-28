@@ -1,4 +1,5 @@
 resource "azurerm_application_gateway" "network" {
+  # oak9: Select either a predefined or custom SSL (TLS) policy type
   name                = "example-appgateway"
   resource_group_name = "example-resourceGroup"
   location            = "example --West-US"
