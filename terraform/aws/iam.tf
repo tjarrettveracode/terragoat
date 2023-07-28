@@ -27,6 +27,7 @@ resource "aws_iam_user_policy" "userpolicy" {
   user = "${aws_iam_user.user.name}"
 
   policy = <<EOF
+  # oak9: Avoid using wildcards for resources. Also, use group policies instead
   # oak9: Avoid using wildcards for actions. Also, use group policies instead
 {
   "Version": "2012-10-17",
