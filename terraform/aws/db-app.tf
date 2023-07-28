@@ -20,6 +20,7 @@ resource "aws_db_instance" "default" {
   skip_final_snapshot     = true
   monitoring_interval     = 0
   publicly_accessible     = true
+  # oak9: RDS Database Instance is publicly accessible
 
   tags = merge({
     Name        = "${local.resource_prefix.value}-rds"
