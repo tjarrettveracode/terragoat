@@ -208,6 +208,7 @@ resource "aws_iam_role_policy" "ec2policy" {
   role = aws_iam_role.ec2role.id
 
   policy = <<EOF
+  # oak9: Avoid using wildcards ['*'] in IAM actions
 {
   "Version": "2012-10-17",
   "Statement": [
