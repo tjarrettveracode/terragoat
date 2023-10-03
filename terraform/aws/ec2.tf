@@ -269,6 +269,7 @@ resource "aws_flow_log" "vpcflowlogs" {
 }
 
 resource "aws_s3_bucket" "flowbucket" {
+  # oak9: Configure ACL to restrict public access
   bucket        = "${local.resource_prefix.value}-flowlogs"
   force_destroy = true
 
