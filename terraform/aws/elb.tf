@@ -4,7 +4,7 @@ resource "aws_elb" "weblb" {
 
   listener {
     instance_port     = 8000
-    instance_protocol = "http"
+    instance_protocol = "http" # oak9: listener.instance_protocol should be set to any of ['HTTPS', 'SSL']
     lb_port           = 80
     lb_protocol       = "http" # oak9: listener.lb_protocol should be set to any of ['HTTPS', 'SSL']
   }
