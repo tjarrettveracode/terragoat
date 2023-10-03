@@ -1,5 +1,6 @@
 # Create a new load balancer
 resource "aws_elb" "weblb" {
+  # oak9: Load balancer is internet accessible
   name = "weblb-terraform-elb"
 
   listener {
