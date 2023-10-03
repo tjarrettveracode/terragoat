@@ -1,4 +1,5 @@
 resource "aws_s3_bucket" "data" {
+  # oak9: Configure ACL to restrict public access
   # bucket is public
   # bucket is not encrypted
   # bucket does not have access logs
