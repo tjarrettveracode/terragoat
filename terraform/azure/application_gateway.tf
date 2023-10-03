@@ -1,4 +1,5 @@
 resource "azurerm_application_gateway" "network" {
+  # oak9: Configure TLS policy
   name                = "example-appgateway"
   resource_group_name = "example-resourceGroup"
   location            = "example --West-US"
